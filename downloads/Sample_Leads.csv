@@ -1,0 +1,2 @@
+Company,Name,City,Gender,Phone,Notes
+ABC Inc.,John Doe,Springfield,Male,+16029871234,"Name and Phone are required. If you want to separate First Name and Last Name, you can, but one of those columns MUST be named 'Name'. You may have as many or as little other fields."

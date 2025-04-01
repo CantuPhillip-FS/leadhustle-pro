@@ -1,0 +1,267 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 70px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #f4f4f9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.navbar .nav-links a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a .menu-icon {
+    margin-right: 8px;
+    font-size: 18px;
+    color: #333;
+}
+
+.navbar .nav-links a:hover,
+.navbar .nav-links a.active {
+    color: #1abc9c;
+}
+
+.nav-links.active {
+    display: flex;
+    max-height: 500px;
+}
+
+.nav-links a.active {
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 20px;
+    margin: auto;
+    position: relative;
+}
+
+.navbar + .container {
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.text {
+    text-align: center;
+}
+
+.progress-path {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.progress-step {
+    text-align: center;
+    flex: 1;
+    position: relative;
+}
+
+.progress-step a {
+    text-decoration: none;
+}
+
+.progress-step .circle {
+    display: block;
+    margin: 0 auto 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.progress-step .label {
+    font-size: 14px;
+    color: #666;
+}
+
+.progress-step.active .circle {
+    background-color: #007bff;
+}
+
+.progress-step.active .label {
+    color: #007bff;
+}
+
+.progress-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -50%;
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.progress-step.active:not(:last-child)::after {
+    background-color: #ddd;
+}
+
+.dropzone {
+    border: 2px dashed #007bff;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    text-align: center;
+    cursor: pointer;
+    max-width: 800px;
+    margin: 0 auto;
+    transition: background-color 0.3s;
+}
+
+.dropzone:hover {
+    background-color: #e9ecef;
+}
+
+.sample-download {
+    text-align: center;
+    margin-top: 10px;
+    transition: transform 0.3s;
+}
+
+.sample-download:hover {
+    transform: scale(1.05);
+}
+
+.sample-download a {
+    background-color: white;
+    border-radius: 18px;
+    padding: 10px 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: #007bff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.progress-path + .dropzone {
+    margin-top: 20px;
+}
+
+.data-columns {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto 0 auto;
+}
+
+.headers-column {
+    font-weight: bold;
+}
+
+.data-column {
+    text-align: left;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .dropzone {
+        width: 100%;
+        max-width: none;
+    }
+
+    .sample-download a {
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        max-height: 0;
+        transition: max-height 0.3s ease-in-out;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #f4f4f9;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-links.active {
+        max-height: 500px;
+        display: flex;
+    }
+
+    .nav-links a {
+        margin: 15px 0;
+        text-align: center;
+        color: #333;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}

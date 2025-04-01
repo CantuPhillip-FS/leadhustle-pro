@@ -1,0 +1,76 @@
+/* Base Notification Styles */
+.notification {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    z-index: 1000;
+    animation: slideDown 0.3s ease-out;
+    max-width: 80%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Error Notification Styles */
+.error-notification {
+    background-color: #ff4d4d;
+}
+
+/* Success Notification Styles */
+.success-notification {
+    background-color: #4CAF50;
+}
+
+/* Icon Spacing */
+.notification i {
+    margin-right: 10px;
+}
+
+/* Close Button Styling */
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+    float: right;
+}
+
+.close-btn:hover {
+    transform: scale(1.2); /* Enlarge slightly on hover */
+    transition: transform 0.2s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* Optional: Fade Out Animation */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.notification.hide {
+    animation: fadeOut 0.3s forwards;
+}

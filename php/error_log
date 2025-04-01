@@ -1,0 +1,61 @@
+[10-Dec-2024 17:54:24 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'claiyale_cold_caller_crm.leads_user_15' doesn't exist in /home/claiyale/public_html/php/get_followups.php:13
+Stack trace:
+#0 /home/claiyale/public_html/php/get_followups.php(13): mysqli->query()
+#1 {main}
+  thrown in /home/claiyale/public_html/php/get_followups.php on line 13
+[10-Dec-2024 17:54:30 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'claiyale_cold_caller_crm.leads_user_15' doesn't exist in /home/claiyale/public_html/php/get_followups.php:13
+Stack trace:
+#0 /home/claiyale/public_html/php/get_followups.php(13): mysqli->query()
+#1 {main}
+  thrown in /home/claiyale/public_html/php/get_followups.php on line 13
+[10-Dec-2024 17:54:33 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'claiyale_cold_caller_crm.leads_user_15' doesn't exist in /home/claiyale/public_html/php/get_followups.php:13
+Stack trace:
+#0 /home/claiyale/public_html/php/get_followups.php(13): mysqli->query()
+#1 {main}
+  thrown in /home/claiyale/public_html/php/get_followups.php on line 13
+[10-Dec-2024 17:54:55 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'claiyale_cold_caller_crm.leads_user_15' doesn't exist in /home/claiyale/public_html/php/get_followups.php:13
+Stack trace:
+#0 /home/claiyale/public_html/php/get_followups.php(13): mysqli->query()
+#1 {main}
+  thrown in /home/claiyale/public_html/php/get_followups.php on line 13
+[10-Dec-2024 17:55:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'claiyale_cold_caller_crm.leads_user_15' doesn't exist in /home/claiyale/public_html/php/get_followups.php:13
+Stack trace:
+#0 /home/claiyale/public_html/php/get_followups.php(13): mysqli->query()
+#1 {main}
+  thrown in /home/claiyale/public_html/php/get_followups.php on line 13
+[10-Dec-2024 17:55:38 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'claiyale_cold_caller_crm.leads_user_15' doesn't exist in /home/claiyale/public_html/php/get_followups.php:13
+Stack trace:
+#0 /home/claiyale/public_html/php/get_followups.php(13): mysqli->query()
+#1 {main}
+  thrown in /home/claiyale/public_html/php/get_followups.php on line 13
+[10-Dec-2024 19:35:01 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'claiyale_cold_caller_crm.leads_user_11' doesn't exist in /home/claiyale/public_html/php/get_followups.php:13
+Stack trace:
+#0 /home/claiyale/public_html/php/get_followups.php(13): mysqli->query()
+#1 {main}
+  thrown in /home/claiyale/public_html/php/get_followups.php on line 13
+[10-Dec-2024 20:07:31 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'claiyale_cold_caller_crm.leads_user_12' doesn't exist in /home/claiyale/public_html/php/get_followups.php:13
+Stack trace:
+#0 /home/claiyale/public_html/php/get_followups.php(13): mysqli->query()
+#1 {main}
+  thrown in /home/claiyale/public_html/php/get_followups.php on line 13
+[10-Dec-2024 20:25:43 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'claiyale_cold_caller_crm.leads_user_12' doesn't exist in /home/claiyale/public_html/php/get_followups.php:13
+Stack trace:
+#0 /home/claiyale/public_html/php/get_followups.php(13): mysqli->query()
+#1 {main}
+  thrown in /home/claiyale/public_html/php/get_followups.php on line 13
+[11-Dec-2024 01:41:38 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'claiyale_cold_caller_crm.leads_user_16' doesn't exist in /home/claiyale/public_html/php/get_followups.php:13
+Stack trace:
+#0 /home/claiyale/public_html/php/get_followups.php(13): mysqli->query()
+#1 {main}
+  thrown in /home/claiyale/public_html/php/get_followups.php on line 13
+[11-Dec-2024 01:42:08 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'claiyale_cold_caller_crm.leads_user_16' doesn't exist in /home/claiyale/public_html/php/get_followups.php:13
+Stack trace:
+#0 /home/claiyale/public_html/php/get_followups.php(13): mysqli->query()
+#1 {main}
+  thrown in /home/claiyale/public_html/php/get_followups.php on line 13
+[11-Dec-2024 17:54:04 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'claiyale_cold_caller_crm.leads_user_17' doesn't exist in /home/claiyale/public_html/php/get_followups.php:13
+Stack trace:
+#0 /home/claiyale/public_html/php/get_followups.php(13): mysqli->query()
+#1 {main}
+  thrown in /home/claiyale/public_html/php/get_followups.php on line 13
+[14-Dec-2024 16:32:01 UTC] Message could not be sent. Mailer Error: 

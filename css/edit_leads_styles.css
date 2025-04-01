@@ -1,0 +1,349 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 70px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #f4f4f9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.navbar .nav-links a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a .menu-icon {
+    margin-right: 8px;
+    font-size: 18px;
+    color: #333;
+}
+
+.navbar .nav-links a:hover,
+.navbar .nav-links a.active {
+    color: #1abc9c;
+}
+
+.nav-links.active {
+    display: flex;
+    max-height: 500px;
+}
+
+.nav-links a.active {
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Container Styling */
+.container {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* Top Bar Styling */
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.search-bar {
+    flex: 1 1 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-width: 50%;
+    margin: 0;
+}
+
+.export-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.export-btn i {
+    margin-right: 5px;
+}
+
+.export-btn:hover {
+    background-color: #0056b3;
+}
+
+.save-btn,
+.cancel-btn {
+    background-color: #6c757d; /* Default: Gray for disabled state */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: not-allowed; /* Indicate disabled state */
+    margin-left: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s ease, cursor 0.3s ease;
+}
+
+.save-btn {
+    background-color: #28a745; /* Green */
+}
+
+.save-btn:disabled {
+    background-color: #6c757d; /* Gray */
+}
+
+.save-btn:not(:disabled) {
+    cursor: pointer;
+}
+
+.save-btn:not(:disabled):hover {
+    background-color: #218838;
+}
+
+.cancel-btn {
+    background-color: #dc3545; /* Red */
+}
+
+.cancel-btn:disabled {
+    background-color: #6c757d; /* Gray */
+}
+
+.cancel-btn:not(:disabled) {
+    cursor: pointer;
+}
+
+.cancel-btn:not(:disabled):hover {
+    background-color: #c82333;
+}
+
+.view-options {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.view-options label {
+    margin-right: 5px;
+}
+
+.view-options select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Leads Table Styling */
+.leads-table-container {
+    overflow-x: auto;
+    max-height: 600px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#leadsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#leadsTable th, #leadsTable td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    position: relative;
+}
+
+#leadsTable th {
+    background-color: #f4f4f4;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#leadsTable tr:hover {
+    background-color: #f1f1f1;
+}
+
+.editable {
+    cursor: pointer;
+}
+
+.edit-input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* Pagination Controls */
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination-controls button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-controls button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.pagination-controls button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.pagination-controls span {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        max-height: 0;
+        transition: max-height 0.3s ease-in-out;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #f4f4f9;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-links.active {
+        max-height: 500px;
+        display: flex;
+    }
+
+    .nav-links a {
+        margin: 15px 0;
+        text-align: center;
+        color: #333;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .top-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .save-btn,
+    .cancel-btn {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .searchbar-container {
+        width: 100%;
+    }
+
+    .search-bar {
+        width: 100%;
+        max-height: 30px;
+    }
+
+    .export-btn,
+    .view-options {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .view-options {
+        justify-content: flex-start;
+    }
+
+    #leadsTable th, #leadsTable td {
+        padding: 8px 10px;
+    }
+
+    .save-btn,
+    .cancel-btn {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+
+    .pagination-controls button {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .pagination-controls span {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,88 @@
+/* notifications.css */
+
+/* Base Notification Style */
+.notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 250px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: none; /* Hidden by default */
+    z-index: 10000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    text-align: center;
+}
+
+/* Show the notification */
+.notification.show {
+    display: block;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Success Notification */
+.success-notification {
+    background-color: #28a745; /* Green */
+}
+
+/* Error Notification */
+.error-notification {
+    background-color: #dc3545; /* Red */
+}
+
+/* Close Button */
+.notification .close-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+    position: absolute;
+    float: right;
+    top: 10px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.notification .close-btn:hover {
+    color: #ddd;
+}
+
+/* Optional: Slide Down Animation */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* Optional: Fade Out Animation */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Apply Slide Down Animation When Showing */
+.notification.show {
+    animation: slideDown 0.3s ease-out forwards;
+}
+
+/* Apply Fade Out Animation When Hiding */
+.notification.hide {
+    animation: fadeOut 0.3s forwards;
+}
